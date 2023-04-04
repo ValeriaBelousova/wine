@@ -12,6 +12,14 @@ const BaseMap = ({ children, ...props }) => {
       accessToken="pk.eyJ1IjoidmFsZXJpYWJlbG91c292YSIsImEiOiJjazVkcm51YzMwZGZjM2xvM2xnZmltOHd5In0.1xUC4Qs0uGpmWUQElmlDGA"
       center={[37.6156, 55.7522]}
       zoom={3}
+      options={{
+        minZoom: 3,
+        renderWorldCopies: false,
+        touchPitch: false,
+        pitchWithRotate: false,
+        dragRotate: false,
+        touchZoomRotate: false,
+        attributionControl: false}}
       {...props}
     >
       {children}
@@ -28,18 +36,6 @@ function TwoFingerDragComponent({ map }) {
   map.addControl(nav, 'top-left');
   map.on('load', () => {
     var previousSelectedFeatureId = null;
-    map.addSource('dem', {
-        'type': 'raster-dem',
-        'url': 'mapbox://mapbox.mapbox-terrain-dem-v1'
-        });
-        map.addLayer(
-        {
-        'id': 'hillshading',
-        'source': 'dem',
-        'type': 'hillshade'
-        },
-        'land-structure-polygon'
-        );
     map.addSource('wines', {
         type: 'geojson',
         data: 'https://raw.githubusercontent.com/ValeriaBelousova/json_data/master/wine_poi_id_itog_photos.geojson',
