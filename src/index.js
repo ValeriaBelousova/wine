@@ -28,10 +28,7 @@ const BaseMap = ({ children, ...props }) => {
 
 const TwoFingerDrag = Map.component(TwoFingerDragComponent);
 function TwoFingerDragComponent({ map }) {
-  const nav = new mapboxgl.NavigationControl({
-    showCompass: false,
-    showZoom: true
-});
+  const nav = new mapboxgl.NavigationControl();
   map.addControl(nav, 'top-left');
   map.on('load', () => {
     var previousSelectedFeatureId = null;
