@@ -18,10 +18,6 @@ const BaseMap = ({ children, ...props }) => {
       options={{
         minZoom: 3,
         renderWorldCopies: false,
-        touchPitch: false,
-        pitchWithRotate: false,
-        dragRotate: false,
-        touchZoomRotate: false,
         attributionControl: false}}
       {...props}
     >
