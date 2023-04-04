@@ -448,6 +448,7 @@ function TwoFingerDragComponent({ map }) {
 
       const isCaruselShow = (photos.length > 0) && (photos[0] != '');
       const onlyOnePhoto = (photos.length == 1) && (photos[0] != '');
+      const noAuthor = author == null;
 
       var car_el = ``;
       photos.forEach((photo, index) => {
@@ -504,7 +505,7 @@ function TwoFingerDragComponent({ map }) {
                       <div class='address'>${city}, ${address}</div>
                       <div class='url'><a href=${url} style="color: black">Сайт</a></div>
                       <br>
-                      ${author ? `<div class='type'>Автор винной подборки –</div>
+                      ${!noAuthor ? `<div class='type'>Автор винной подборки –</div>
                                   <div class='author'>${author}</div>` : `` }
                   </div>
               </div>`
