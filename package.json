@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "keywords": [],
-  "homepage": "https://codesandbox.io/s/new",
+  "private": true,
+  "homepage": "https://valeriabelousova.github.io/wine/",
   "main": "src/index.js",
   "dependencies": {
     "@commodityvectors/react-mapbox-gl": "2.0.3",
@@ -18,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "react-scripts build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
