@@ -1,2 +1,0 @@
-# wine
-Created with CodeSandbox
