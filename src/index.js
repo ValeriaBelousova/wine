@@ -442,13 +442,13 @@ function TwoFingerDragComponent({ map }) {
       const type = e.features[0].properties['Тип_з'].replace(';', ',');
       const city = e.features[0].properties['Город'];
       const address = e.features[0].properties['Адрес'];
-      const author = e.features[0].properties['Имя_с'];
+      var author = e.features[0].properties['Имя_с'];
   
       const photos = e.features[0].properties['photos'].split(',');
 
       const isCaruselShow = (photos.length > 0) && (photos[0] != '');
       const onlyOnePhoto = (photos.length == 1) && (photos[0] != '');
-      const noAuthor = author == null;
+      var noAuthor = author.length <= 4;
 
       var car_el = ``;
       photos.forEach((photo, index) => {
