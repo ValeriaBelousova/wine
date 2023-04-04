@@ -3,6 +3,9 @@ import mapboxgl from 'mapbox-gl';
 import { render } from "react-dom";
 import { Map } from "@commodityvectors/react-mapbox-gl";
 
+import './fonts/Noah/NoahText-Regular.ttf';
+import './fonts/Noah/NoahText-Bold.ttf';
+
 import "./style.css";
 
 const BaseMap = ({ children, ...props }) => {
