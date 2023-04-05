@@ -49,6 +49,9 @@ body {
 .mapboxgl-popup-content .content {
   color: black;
 }
+.carousel-control-next {
+  opacity: 1;
+}
 .carousel-control-next-icon {
   /*display: none;*/
   background-image: url(https://storage.yandexcloud.net/svg-wine/free-icon-font-angle-right-3916889.svg);
@@ -56,6 +59,9 @@ body {
 }
 .carousel-control-next-icon:hover {
   color: rgb(255, 255, 255); 
+}
+.carousel-control-prev {
+  opacity: 1;
 }
 .carousel-control-prev-icon {
   /*display: none;*/
