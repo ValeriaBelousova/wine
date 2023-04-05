@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/wine/static/css/main.1096087d.chunk.css",
+    "main.css": "/wine/static/css/main.5c5891c2.chunk.css",
     "main.js": "/wine/static/js/main.f3238302.chunk.js",
     "main.js.map": "/wine/static/js/main.f3238302.chunk.js.map",
     "runtime-main.js": "/wine/static/js/runtime-main.13038b02.js",
@@ -9,10 +9,10 @@
     "static/js/2.225f1364.chunk.js": "/wine/static/js/2.225f1364.chunk.js",
     "static/js/2.225f1364.chunk.js.map": "/wine/static/js/2.225f1364.chunk.js.map",
     "index.html": "/wine/index.html",
-    "precache-manifest.1cf1da4e91883c0fe8bdfd6af47e7273.js": "/wine/precache-manifest.1cf1da4e91883c0fe8bdfd6af47e7273.js",
+    "precache-manifest.96e9aaf8144efd00344d67436b1bc27d.js": "/wine/precache-manifest.96e9aaf8144efd00344d67436b1bc27d.js",
     "service-worker.js": "/wine/service-worker.js",
     "static/css/2.2b597d09.chunk.css.map": "/wine/static/css/2.2b597d09.chunk.css.map",
-    "static/css/main.1096087d.chunk.css.map": "/wine/static/css/main.1096087d.chunk.css.map",
+    "static/css/main.5c5891c2.chunk.css.map": "/wine/static/css/main.5c5891c2.chunk.css.map",
     "static/media/NoahText-Bold.ttf": "/wine/static/media/NoahText-Bold.ae41f2f0.ttf",
     "static/media/NoahText-Regular.ttf": "/wine/static/media/NoahText-Regular.73000660.ttf"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.13038b02.js",
     "static/css/2.2b597d09.chunk.css",
     "static/js/2.225f1364.chunk.js",
-    "static/css/main.1096087d.chunk.css",
+    "static/css/main.5c5891c2.chunk.css",
     "static/js/main.f3238302.chunk.js"
   ]
 }

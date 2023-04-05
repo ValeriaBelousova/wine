@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f2ed553006f504487f36ea7998f886db",
+    "revision": "6f96bcaace59e700c0f3a0682bf188e3",
     "url": "/wine/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wine/static/css/2.2b597d09.chunk.css"
   },
   {
-    "revision": "18e19e0623fd2658114d",
-    "url": "/wine/static/css/main.1096087d.chunk.css"
+    "revision": "eb73701ea76ff4678766",
+    "url": "/wine/static/css/main.5c5891c2.chunk.css"
   },
   {
     "revision": "061641651bd2d8832d46",
     "url": "/wine/static/js/2.225f1364.chunk.js"
   },
   {
-    "revision": "18e19e0623fd2658114d",
+    "revision": "eb73701ea76ff4678766",
     "url": "/wine/static/js/main.f3238302.chunk.js"
   },
   {
