@@ -500,7 +500,7 @@ function TwoFingerDragComponent({ map }) {
                       <div class='type'>${type}</div>
                       <br>
                       <div class='address'>${city}, ${address}</div>
-                      <div class='url'><a href=${url} style="color: black">Сайт</a></div>
+                      <div class='url'><a href=${url} target="_blank" style="color: black">Сайт</a></div>
                       <br>
                       ${!noAuthor ? `<div class='type'>Автор винной подборки –</div>
                                   <div class='author'>${author}</div>` : `` }
