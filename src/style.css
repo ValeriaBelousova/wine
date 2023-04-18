@@ -9,10 +9,16 @@ body {
   height: 100%;
   width: 100%;
 }
+@font-face {
+  font-family: "Noah";
+  src: url("./fonts/Noah/NoahText-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
 .mapboxgl-popup{
   transform:none !important;
-  top: 6%;
-  left: 15%;
+  top: 0px;
+  /*left: 15%;*/
+  z-index: 1000;
 }
 .mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip,
@@ -26,7 +32,7 @@ body {
   display:none !important;
 }
 .mapboxgl-popup-close-button {
-  background: url(https://storage.yandexcloud.net/svg-wine/free-icon-font-cross-3917114.svg); /* Подключение SVG */
+  background: url(https://storage.yandexcloud.net/svg-wine/free-icon-font-cross-3917114.svg);
   background-color: rgb(255, 255, 255);
   background-repeat: no-repeat;
   background-size: 14px 14px;
@@ -36,7 +42,7 @@ body {
   height: 32px;
   color: rgba(0, 0, 0, 0);
   border-radius: 0px;
-  z-index: 100;
+  z-index: 1001;
 }
 .mapboxgl-popup-close-button:hover {
   background-color: rgb(255, 255, 255); 
@@ -44,32 +50,29 @@ body {
 .mapboxgl-popup-content {
   font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', sans-serif;
   padding: 0;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
+}
+.mapboxgl-popup-content .collapsed {
+  transform: translateX(-295px);
 }
 .mapboxgl-popup-content .content {
   color: black;
 }
-.carousel-control-next {
-  opacity: 1;
+.mapboxgl-ctrl-icon {
+  padding: 9px;
+}
+.my-image-button {
+  background: url("https://storage.yandexcloud.net/svg-wine/world.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: center center;
 }
 .carousel-control-next-icon {
-  /*display: none;*/
   background-image: url(https://storage.yandexcloud.net/svg-wine/free-icon-font-angle-right-3916889.svg);
-  opacity: none;
-}
-.carousel-control-next-icon:hover {
-  color: rgb(255, 255, 255); 
-}
-.carousel-control-prev {
-  opacity: 1;
 }
 .carousel-control-prev-icon {
-  /*display: none;*/
   background-image: url(https://storage.yandexcloud.net/svg-wine/free-icon-font-angle-left-3916894.svg);
-  opacity: none;
-}
-.carousel-control-prev-icon:hover {
-  color: rgb(255, 255, 255); 
 }
 .carousel-item {
   width: 100%;
@@ -85,7 +88,7 @@ body {
   object-fit: cover;
 }
 .description {
-  padding: 10px 20px 20px 20px;
+  padding: 10px 20px 80px 20px;
   font-family: 'Noah', sans-serif;
 }
 .name {
@@ -108,4 +111,135 @@ body {
   color: black;
   font-family: 'Noah', sans-serif;
   font-weight: 600;
+}
+.rounded-rect {
+background: white;
+border-radius: 0px;
+}
+
+.flex-center {
+position: absolute;
+justify-content: center;
+align-items: center;
+}
+
+.flex-center.right {
+right: 0px;
+}
+
+.sidebar-content {
+  overflow: scroll;
+  position: absolute;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  width: 100%;
+  height: 100%;
+  font-family:  'Noah', sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+.sidebar-toggle {
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: url(https://storage.yandexcloud.net/svg-wine/free-icon-font-cross-3917114.svg);
+  background-color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: center center;
+
+  width: 40px;
+  height: 42px;
+  color: rgba(0, 0, 0, 0);
+  border-radius: 0px;
+  z-index: 100;
+}
+
+.sidebar-toggle:hover {
+cursor: pointer;
+}
+.sidebar {
+  transition: transform 1s;
+  z-index: 1;
+  width: 380px;
+  height: 100%;
+}
+
+.right.collapsed {
+  transform: translateX(380px);
+}
+.right.close {
+  background-color: rgb(172, 12, 12);
+  background: url(https://storage.yandexcloud.net/svg-wine/burger.svg);
+  background-color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: center center;
+  opacity: 1;
+}
+ul {
+list-style-type: none;
+  padding-inline-start: 20px;
+}
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  display:block;
+}
+ul li a:hover, ul li a:focus {
+  text-decoration: underline;
+}
+
+.list span {
+  cursor: pointer;
+}
+.list li {
+  cursor: pointer;
+  padding: 7px 0 3px 0;
+}
+
+.hide::before {
+  text-decoration: none;
+}
+
+.show::before {
+  text-decoration: underline; 
+  color: red;
+} 
+.show {
+  text-decoration: none;
+} 
+.hide {
+  text-decoration: underline;
+}  
+.selected {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.selected1 {
+  text-decoration: underline !important;
+  font-weight: bold;
+}
+.deselected {
+  text-decoration: none;
+}
+.deselected:hover {
+  text-decoration: underline; 
+}
+span {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 20;
+  font-family: 'Noah', sans-serif;
+  font-weight: 400;
 }
