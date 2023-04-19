@@ -11,8 +11,8 @@ body {
 }
 @font-face {
   font-family: "Noah";
-  src: url("./fonts/Noah/NoahText-Regular.ttf") format("truetype");
-  font-weight: 400;
+  src: url("./fonts/Noah/NoahText-Regular.ttf") format("truetype"),
+       url("./fonts/Noah/NoahText-Black.ttf") format("truetype");
 }
 .mapboxgl-popup{
   transform:none !important;
@@ -155,8 +155,8 @@ right: 0px;
   background-size: 14px 14px;
   background-position: center center;
 
-  width: 40px;
-  height: 42px;
+  width: 30px;
+  height: 32px;
   color: rgba(0, 0, 0, 0);
   border-radius: 0px;
   z-index: 100;
@@ -173,7 +173,7 @@ cursor: pointer;
 }
 
 .right.collapsed {
-  transform: translateX(380px);
+  transform: translateX(100%);
 }
 .right.close {
   background-color: rgb(172, 12, 12);
@@ -197,8 +197,8 @@ ul li a {
 }
 ul li a:hover, ul li a:focus {
   text-decoration: underline;
+  font-weight: 900;
 }
-
 .list span {
   cursor: pointer;
 }
@@ -242,4 +242,7 @@ span {
   font-size: 20;
   font-family: 'Noah', sans-serif;
   font-weight: 400;
+}
+span:hover {
+  text-decoration: none;
 }
