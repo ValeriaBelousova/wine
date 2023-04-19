@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/wine/static/css/main.4e2c4f87.chunk.css",
-    "main.js": "/wine/static/js/main.b1829884.chunk.js",
-    "main.js.map": "/wine/static/js/main.b1829884.chunk.js.map",
+    "main.css": "/wine/static/css/main.e9288744.chunk.css",
+    "main.js": "/wine/static/js/main.ad77a79c.chunk.js",
+    "main.js.map": "/wine/static/js/main.ad77a79c.chunk.js.map",
     "runtime-main.js": "/wine/static/js/runtime-main.13038b02.js",
     "runtime-main.js.map": "/wine/static/js/runtime-main.13038b02.js.map",
     "static/css/2.2b597d09.chunk.css": "/wine/static/css/2.2b597d09.chunk.css",
     "static/js/2.a57e14e9.chunk.js": "/wine/static/js/2.a57e14e9.chunk.js",
     "static/js/2.a57e14e9.chunk.js.map": "/wine/static/js/2.a57e14e9.chunk.js.map",
     "index.html": "/wine/index.html",
-    "precache-manifest.eddb73b1605f79d349e6ff1affcf9650.js": "/wine/precache-manifest.eddb73b1605f79d349e6ff1affcf9650.js",
+    "precache-manifest.50230a6ed11416569a9efef7ed5e7a4e.js": "/wine/precache-manifest.50230a6ed11416569a9efef7ed5e7a4e.js",
     "service-worker.js": "/wine/service-worker.js",
     "static/css/2.2b597d09.chunk.css.map": "/wine/static/css/2.2b597d09.chunk.css.map",
-    "static/css/main.4e2c4f87.chunk.css.map": "/wine/static/css/main.4e2c4f87.chunk.css.map",
+    "static/css/main.e9288744.chunk.css.map": "/wine/static/css/main.e9288744.chunk.css.map",
     "static/media/style.css": "/wine/static/media/NoahText-Regular.73000660.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.13038b02.js",
     "static/css/2.2b597d09.chunk.css",
     "static/js/2.a57e14e9.chunk.js",
-    "static/css/main.4e2c4f87.chunk.css",
-    "static/js/main.b1829884.chunk.js"
+    "static/css/main.e9288744.chunk.css",
+    "static/js/main.ad77a79c.chunk.js"
   ]
 }
