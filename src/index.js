@@ -223,6 +223,10 @@ function TwoFingerDragComponent({ map }) {
                         <ul id="tmn">
                         </ul>
                     </li>
+                    <li>Уфа
+                        <ul id="ufa">
+                        </ul>
+                    </li>
                     <li>Ялта
                         <ul id="yal">
                         </ul>
@@ -278,6 +282,8 @@ function TwoFingerDragComponent({ map }) {
             var tmkContainer = document.getElementById("tmk");
             var tmnContainer = document.getElementById("tmn");
             var srgContainer = document.getElementById("srg");
+
+            var ufaContainer = document.getElementById("ufa");
             var yalContainer = document.getElementById("yal");
 
             for (var i = 0; i < data.features.length; i++) {
@@ -436,6 +442,18 @@ function TwoFingerDragComponent({ map }) {
                     div.id = id;
                     div.onclick = function() { myFunction(data, this.id); };
                     tmnContainer.appendChild(div);
+                }
+                if (data.features[i].properties['Город'] == 'Уфа') {
+                    var div = document.createElement("li");
+                    div.className = "deselected";
+                    var a = document.createElement("a");
+                    a.className = "deselected";
+                    a.innerHTML = data.features[i].properties['Назва'];
+                    div.appendChild(a);
+                    var id = data.features[i].id;
+                    div.id = id;
+                    div.onclick = function() { myFunction(data, this.id); };
+                    ufaContainer.appendChild(div);
                 }
                 if (data.features[i].properties['Город'] == 'Ялта') {
                     var div = document.createElement("li");
