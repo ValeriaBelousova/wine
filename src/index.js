@@ -78,7 +78,7 @@ function TwoFingerDragComponent({ map }) {
                                         car_el = car_el + 
                                         `<div class="carousel-item active">
                                             <img class="d-block w-100"
-                                             src="https://storage.yandexcloud.net/wine/${photo_name.replace('\'', '').replace('\'', '').replace(' ', '')}" 
+                                             src="https://storage.yandexcloud.net/champagnefest/${photo_name.replace('\'', '').replace('\'', '').replace(' ', '')}" 
                                              alt="First slide">
                                         </div>`
                                     }
@@ -86,7 +86,7 @@ function TwoFingerDragComponent({ map }) {
                                         car_el = car_el + 
                                         `<div class="carousel-item">
                                             <img class="d-block w-100"
-                                             src="https://storage.yandexcloud.net/wine/${photo_name.replace('\'', '').replace('\'', '').replace(' ', '')}" 
+                                             src="https://storage.yandexcloud.net/champagnefest/${photo_name.replace('\'', '').replace('\'', '').replace(' ', '')}" 
                                              alt="First slide">
                                         </div>`
                                     }
@@ -243,7 +243,7 @@ function TwoFingerDragComponent({ map }) {
   root.appendChild(sider_right_button);
   
 
-  fetch('https://raw.githubusercontent.com/ValeriaBelousova/json_data/master/wine_poi_id_itog_photos.geojson')
+  fetch('https://raw.githubusercontent.com/emgdevhelp/winemap/main/wine_poi_id_itog_photos.geojson')
             .then(function (response) {
                 return response.json();
             })
@@ -520,7 +520,7 @@ function TwoFingerDragComponent({ map }) {
     toggleSidebar();
     map.addSource('wines', {
         type: 'geojson',
-        data: 'https://raw.githubusercontent.com/ValeriaBelousova/json_data/master/wine_poi_id_itog_photos.geojson',
+        data: 'https://raw.githubusercontent.com/emgdevhelp/winemap/main/wine_poi_id_itog_photos.geojson',
         cluster: true,
         clusterMaxZoom: 14,
         clusterRadius: 38
